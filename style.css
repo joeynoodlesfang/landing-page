@@ -1,9 +1,19 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
     font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    /* text-align: center; */
+    /* min-height: 100vh; */
+}
+
+.content {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
     min-height: 100vh;
 }
 
@@ -21,12 +31,7 @@ body {
     margin: 8px;
 }
 
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .sect1 {
     flex: 1 0 0;
@@ -67,12 +72,82 @@ body {
 .sect2 {
     flex: 1;
     background-color: F9FAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sect2-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.sect2-mid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+
+
+.sect2-mid-obj {
+    flex: 0 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100;
+}
+
+.sect2-mid-obj img{
+    margin-bottom: 8px;
+}
+
+.sect2-mid-obj-text {
+    /* flex: 1; */
+    /* max-width: 100; */
+    font-size: 12px;
+    text-align: center;
+    /* font-weight: 900; */
 }
 
 .sect3 {
     flex: 1;
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
 
+}
+
+.sect3-quote{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    width: 80%;
+}
+
+.sect3-author{
+    flex: 1;
+    /* background-color: #1F2937; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: baseline;
+    text-align: right;
+    font-size: 36px;
+    font-weight: 900;
+    width: 80%;
 }
 
 .footer {
@@ -84,3 +159,8 @@ body {
     font-size: 12px;
     height: 48px;
 }
+
+.rounded-image {
+    border: 2px solid 3882F6; /* You can change the color and width of the border */
+    border-radius: 15px; /* Adjust this value for more or less rounded corners */
+  }
